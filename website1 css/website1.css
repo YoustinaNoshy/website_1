@@ -1,0 +1,439 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.box {
+    position: fixed;
+    background-color: royalblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 70px;
+    z-index: 50;
+}
+.logo {
+    width: 100px;
+    height: 60px;
+    margin-left: 80px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+   margin-right: 25px;
+}
+a:hover {
+    color: silver;
+    font-size:35px ;
+    text-decoration-line: underline;
+}
+.sec1 {
+width: 100%;
+height: 750px;
+background-color: aquamarine;
+background-image: url(../website1\ html/BMW-M5-2012-01.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: scroll;
+background-position: center;
+position: relative;
+z-index: 30;
+}
+.sec1 div{
+    transform: translate(35%, 450%);
+}
+
+.sec1 h1 {
+    font-size: 40px;
+}
+.sec1 p
+{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.sec1 button {
+    margin-left: 50px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 25px;
+    cursor:pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.b2 {
+    color: white;
+    background-color: royalblue;
+  
+}
+/* ----------------------sec2-------------- */
+.line {
+    color:royalblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.old {
+    width: 1500px;
+    height:270px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px auto;
+}
+.old div {
+    width: 27%;
+    border: 2px solid black;
+    border-top-color: rgb(180, 177, 177);
+    align-items: center;
+    background-color: rgb(226, 243, 237);
+    height: 100%;
+    padding: 20px;
+    position: relative;
+}
+.old div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(145, 142, 142);
+    transition: 1s;
+}
+.old div:hover::after {
+width: 100%;
+height: 100%;
+opacity: 0.5;
+}
+.old h2 {
+    margin-left: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.old p {
+   margin-top: 20px;
+   padding-left: 45px;
+    font-size: 30px;
+    color: gray;
+}
+.old button {
+    padding: 10px;
+    background-color:dodgerblue;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 120px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    cursor: pointer;
+    color: white;
+}
+/* ---------------our team-------------- */
+.liine {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.section2 {
+    width: 1500px;
+    height: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.section2 div{
+    background-color: rgb(204, 198, 198);
+}
+
+.section2 div::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0;
+    top: 0;
+    background-color:rgb(145, 142, 142) ;
+    transition: 1s;
+}
+.section2 div:hover::after {
+    width: 400px;
+    height: 100%;
+    opacity: 0.5;
+}
+img {
+    width:350px;
+    height: 450px ;
+    margin: 15px 25px;
+}
+h3 {
+    font-size: 30px;
+    margin-left: 130px;
+}
+.section2 p {
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 25px;
+}
+/* ---------------pricing table----------- */
+.section3 {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(219, 212, 212);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.section3 h2 {
+    position: absolute;
+    font-size: 50px;
+    color: royalblue;
+}
+.price {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+}
+.price h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(119, 116, 116);
+    margin: 40px 130px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border: 3px solid royalblue;
+    border-radius: 50%;
+    margin-left: 145px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.circle p {
+    font-size: 35px;
+    position: absolute;
+    margin-left: 10px;
+}
+.price .details {
+    color: grey;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    position: absolute;
+}
+.details button {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid blue;
+    margin-top: 20px;
+}
+.section3 div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    background-color:rgb(145, 142, 142) ;
+    transition: 1s;
+}
+.section3 div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/* ----------------------------------- */
+.section4 {
+    background-color: rgb(219, 212, 212);
+    width: 100%;
+    height: 1500px;
+}
+.data {
+    background-color: rgb(56, 55, 55);
+    width: 100%;
+    height: 550px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.img_1,.img_2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.front {
+    color: royalblue;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.lorem {
+    font-size: 20px;
+    color: white;
+}
+
+.headlines{
+    display: flex;
+    flex-direction: row;
+}
+.para {
+    margin-top: 60px;
+}
+.section4 h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+}
+/* --------------cars-------------- */
+.section5 {
+    width: 100%;
+}
+.cars {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 40px auto;  
+}
+.cars img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.cars div {
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 20px;
+}
+.cars div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: rgb(145, 142, 142);
+}
+.cars div:hover::after {
+   width: 250px;
+   height: 250px;
+   opacity: 0.5;
+}
+/* ----------------offers--------- */ 
+.section6 {
+    width: 100%;
+    height: 500px;
+}
+
+.section6 h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+}
+.offers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offers div {
+    background-color: rgb(233, 250, 244);
+    width: 400px;
+    height: 280px;
+    border: 1px solid black;
+    position: relative;
+}
+.offers i {
+    margin-top: 40px;
+    margin-left: 40px;
+    color: royalblue;
+    font-size: 38px;
+}
+.offers div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-color:rgb(145, 142, 142) ;
+    transition: 1s;
+}
+.offers div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.section6 p {
+    color: rgb(146, 144, 144);
+    font-size: 23px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+/* ----------------section7---------- */
+.section7 {
+    width: 100%;
+    height:500px;
+    background-color:rgb(56, 55, 55);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.section7 img {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin-top:70px;
+}
+.icons {
+    margin-top: 300px;
+    color: royalblue;
+    cursor: pointer;
+}
+.section7 i {
+font-size: 55px;
+margin-right: 5px;
+}
+.section7 p {
+    position: absolute;
+    color: rgb(156, 154, 154);
+    margin-top:400px ;
+    font-size: 20px;
+}
